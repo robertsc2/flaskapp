@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Oingo Boingo Brothers - Menu</title>
+  <link rel="stylesheet" href="/static/css/style.css" />
+  <script src="/static/js/menu.js" defer></script> <!-- This will handle the tab switching -->
+</head>
+<body>
+
+  <!-- Yellow bar above topnav -->
+  <div class="yellow-strip top"></div>
+
+  <!-- Topnav bar -->
+  <div class="topnav">
+    <!-- Left: Logo -->
+    <div class="logo">
+      <a href="/"><img src="/static/logo.png" alt="OBB logo" /></a>
+    </div>
+
+    <!-- Center: Navigation Links -->
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/menu" class="active">Menu</a>
+    </div>
+
+    <!-- Right: Shopping Cart -->
+    <div class="cart">
+      <a href="/cart"><img src="/static/cart-icon.png" alt="Cart" /></a>
+    </div>
+  </div>
+
+  <!-- Yellow bar below topnav -->
+  <div class="yellow-strip bottom"></div>
+
+  <!-- Menu tabs -->
+  <div class="menu-tabs">
+    <button class="tablink" onclick="openTab(event, 'Burgers')" id="defaultOpen">Burgers</button>
+    <button class="tablink" onclick="openTab(event, 'Chinese')">Chinese</button>
+    <button class="tablink" onclick="openTab(event, 'Drinks')">Drinks</button>
+    <button class="tablink" onclick="openTab(event, 'Fish')">Fish Options</button>
+    <button class="tablink" onclick="openTab(event, 'FriedSeafood')">Fried Seafood</button>
+    <button class="tablink" onclick="openTab(event, 'FriedExtras')">Fried Extras</button>
+    <button class="tablink" onclick="openTab(event, 'FriedSides')">Fried Sides</button>
+  </div>
+
+  <!-- Menu content for each tab -->
+  <div class="tab-content">
+    <div id="Burgers" class="tabcontent">
+      <h3>Burgers</h3>
+    </div>
+
+    <div id="Chinese" class="tabcontent">
+      <h3>Chinese</h3>
+    </div>
+
+    <div id="Drinks" class="tabcontent">
+      <h3>Drinks</h3>
+    </div>
+
+    <div id="Fish" class="tabcontent">
+      <h3>Fish Options</h3>
+    </div>
+
+    <div id="FriedSeafood" class="tabcontent">
+      <h3>Fried Seafood</h3>
+    </div>
+
+    <div id="FriedExtras" class="tabcontent">
+      <h3>Fried Extras</h3>
+    </div>
+
+    <div id="FriedSides" class="tabcontent">
+      <h3>Fried Sides</h3>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="yellow-strip top"></div>
+  <div class="footer">
+    <div class="container">
+      <p>© 2025 Oingo Boingo Brothers | 14 Bay Street, Matua, Tauranga, 3110, Bay of Plenty, New Zealand</p>
+    </div>
+  </div>
+
+</body>
+</html>
