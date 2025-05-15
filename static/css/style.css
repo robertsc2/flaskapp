@@ -99,3 +99,17 @@
     margin-bottom: 0;
   }
 
+.OWNERS {
+  width: 400px;
+  height: 400px;
+
+  border-radius: 10px;
+
+}
+
+.OWNERS_TEXT {
+  text-align: center;
+  font-size: 20px;
+  font-size: large;
+  font-weight: bold;
+}
