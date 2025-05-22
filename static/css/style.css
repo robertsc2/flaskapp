@@ -3,6 +3,7 @@
   margin: auto;
   padding: 0;
   box-sizing: border-box;
+  
 }
 /* Yellow bar */
 .yellow-strip {
@@ -53,22 +54,24 @@
   gap: 40px;
   align-items: center;
   justify-content: center;
-  max-width: fit-content;
+  max-width: 1202px;
 }
 .left-box img {
-  width: 100%;
-  max-width: 400px;
+
   border-radius: 10px;
+  ;
 }
 .right-box, .left-box {
   flex: 1;
 }
 .right-box h2, .left-box h3, .right-box h3 {
   margin-bottom: 10px;
+  text-align: center;
 }
 .right-box p, .left-box p {
   font-size: 16px;
   line-height: 1.6;
+  text-align: center;
 }
 /* Middle brown bar */
 .brown-bar {
