@@ -90,12 +90,12 @@
   padding: 15px;
   font-size: 14px;
 }
-.OWNERS {
+.STAFF {
   width: 400px;
   height: 400px;
   border-radius: 10px;
 }
-.OWNERS_TEXT {
+.STAFF_TEXT {
   text-align: center;
   font-size: 20px;
   font-size: large;
@@ -112,6 +112,40 @@
   opacity: 0;
 }
 
-.agh {
-  opacity: 0;
+
+
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.food-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.order-button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #ffcc00;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.order-button:hover {
+  background-color: #ffaa00;
+}
+.box {
+  width: 300px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
 }
