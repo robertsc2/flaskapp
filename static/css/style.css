@@ -8,11 +8,11 @@
 /* Yellow bar */
 .yellow-strip {
   height: 10px;
-  background-color: #ddaa44;
+  background-color: #333;
 }
 /* Topnav container */
 .topnav {
-  background-color: #4f1c04;
+  background-color: #311102;
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -44,7 +44,7 @@
   gap: 20px;
 }
 .nav-links a:hover {
-  background-color: #311102;
+  background-color:   ;
   border-radius: 5px;
 }
 /* Main content rows */
@@ -75,7 +75,7 @@
 }
 /* Middle brown bar */
 .brown-bar {
-  background-color: #4F0604;
+  background-color: #311102;
   color: white;
   text-align: center;
   padding: 20px;
@@ -123,7 +123,11 @@
 .food-item {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  border-radius: 15px;
+  background-color: antiquewhite;
+  width: 250px;
+  height: 350px;
+  margin-top: 50px;
 }
 
 .order-button {
@@ -138,14 +142,22 @@
 .order-button:hover {
   background-color: #ffaa00;
 }
-.box {
-  width: 300px;
-  height: 60px;
+
+.foodtypebox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   border-radius: 10px;
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 50px;
+  width: 200px;
+  height: 50px;
+  margin-top: 30px;
+}
+
+.burgerimage { 
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
 }
