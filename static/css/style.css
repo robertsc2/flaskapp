@@ -14,7 +14,7 @@
 .topnav {
   background-color: #311102;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   position: relative;
   border-left-width: 100px;
   border-right-width: 100px;
@@ -118,6 +118,8 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
+  padding: 20px;
 }
 
 .food-item {
@@ -127,7 +129,8 @@
   background-color: antiquewhite;
   width: 250px;
   height: 350px;
-  margin-top: 50px;
+  
+  margin: 50px;
 }
 
 .order-button {

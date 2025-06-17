@@ -34,59 +34,97 @@
 
   <!-- Yellow bar below topnav -->
   <div class="yellow-strip bottom"></div>
+<!-- Burgers Section -->
 <div class="foodtypebox">
   <h1>Burgers</h1>
 </div>
-
-
-
-
 <div class="parent">
-    <div class="food-item">
-      <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Cheese Burger">
-      <h2 class="burgername">Cheese Burger</h2>
-      <h3 class="burgerprice" data-item="Cheese Burger">Loading...</h3>
-      <button class="order-button">Order</button>
-    
-    </div><div class="food-item">
-      <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Cheese Burger">
-      <button class="order-button">Order</button>
-    </div><div class="food-item">
-      <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Cheese Burger">
-      <button class="order-button">Order</button>
-    </div><div class="food-item">
-      <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Cheese Burger">
-      <button class="order-button">Order</button>
-    </div><div class="food-item">
-      <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Cheese Burger">
-      <button class="order-button">Order</button>
-    </div>
-    <div class="food-item">
-      <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Cheese Burger">
-      <button class="order-button">Order</button>
-    </div>
+  <div class="food-item">
+    <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Egg Burger">
+    <h2 class="burgername">Egg Burger</h2>
+    <h3 class="burgerprice">$7.00</h3>
+    <button class="order-button">Order</button>
+  </div>
+  <div class="food-item">
+    <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Ham Burger">
+    <h2 class="burgername">Ham Burger</h2>
+    <h3 class="burgerprice">$7.00</h3>
+    <button class="order-button">Order</button>
+  </div>
+  <div class="food-item">
+    <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Cheese Burger">
+    <h2 class="burgername">Cheese Burger</h2>
+    <h3 class="burgerprice">$7.00</h3>
+    <button class="order-button">Order</button>
+  </div>
+  <div class="food-item">
+    <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Chicken Burger">
+    <h2 class="burgername">Chicken Burger</h2>
+    <h3 class="burgerprice">$9.00</h3>
+    <button class="order-button">Order</button>
+  </div>
+  <div class="food-item">
+    <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Fish Burger">
+    <h2 class="burgername">Fish Burger</h2>
+    <h3 class="burgerprice">$9.00</h3>
+    <button class="order-button">Order</button>
+  </div>
+  <div class="food-item">
+    <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Works Burger">
+    <h2 class="burgername">Works Burger</h2>
+    <h3 class="burgerprice">$12.00</h3>
+    <button class="order-button">Order</button>
+  </div>
+  <div class="food-item">
+    <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Steak Burger">
+    <h2 class="burgername">Steak Burger</h2>
+    <h3 class="burgerprice">$10.00</h3>
+    <button class="order-button">Order</button>
+  </div>
+<div class="food-item">
+    <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Kids Burger">
+    <h2 class="burgername">Kids Burger</h2>
+    <h3 class="burgerprice">$5.00</h3>
+    <button class="order-button">Order</button>
+  </div>
+  <div class="food-item">
+    <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Hawaiian Burger">
+    <h2 class="burgername">Hawaiian Burger</h2>
+    <h3 class="burgerprice">$10.00</h3>
+    <button class="order-button">Order</button>
+  </div>
+  <div class="food-item">
+    <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Mathew Burger">
+    <h2 class="burgername">Mathew Burger</h2>
+    <h3 class="burgerprice">$17.00</h3>
+    <button class="order-button">Order</button>
+  </div>
 </div>
 
-<script>
-document.querySelectorAll('.burgerprice').forEach(priceElement => {
-  const item = priceElement.getAttribute('data-item');
+<!-- Fried Rice Section -->
+<div class="foodtypebox">
+  <h1>Fried Rice</h1>
+</div>
+<div class="parent">
+  <div class="food-item">
+    <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Egg Fried Rice">
+    <h2 class="burgername">Egg Fried Rice</h2>
+    <h3 class="burgerprice">$18.00</h3>
+    <button class="order-button">Order</button>
+  </div>
+  <div class="food-item">
+    <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Chicken Fried Rice">
+    <h2 class="burgername">Chicken Fried Rice</h2>
+    <h3 class="burgerprice">$19.00</h3>
+    <button class="order-button">Order</button>
+  </div>
+  <!-- Add the rest of the Fried Rice items here -->
+</div>
 
-  // Fetch price from the backend
-  fetch(`/api/price/${item}`)
-    .then(response => response.json())
-    .then(data => {
-      if (data.price) {
-        priceElement.textContent = `$${data.price.toFixed(2)}`;
-      } else {
-        priceElement.textContent = 'Price not available';
-      }
-    })
-    .catch(error => {
-      console.error('Error fetching price:', error);
-      priceElement.textContent = 'Error fetching price';
-    });
-});
-</script>
+
+
+
+
 
 </body>
 </html>
@@ -96,4 +134,4 @@ document.querySelectorAll('.burgerprice').forEach(priceElement => {
     <div class="container">
       <p>© 2025 Oingo Boingo Brothers | 14 Bay Street, Matua, Tauranga, 3110, Bay of Plenty, New Zealand</p>
     </div>
-  </div>
+  </div></div>
