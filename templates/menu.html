@@ -1,137 +1,347 @@
 <!DOCTYPE html>
 <html lang="en">
-  
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Oingo Boingo Brothers - Menu</title>
-  <link rel="stylesheet" href="/static/css/style.css" />
-  <script src="/static/js/menu.js" defer></script> <!-- This will handle the tab switching -->
-</head>
-<body> 
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Oingo Boingo Brothers - Menu</title>
+        <link rel="stylesheet" href="/static/css/style.css" />
+        <script src="/static/js/menu.js" defer></script>
+        <!-- This will handle the tab switching -->
+    </head>
+    <body>
+        <!-- greybar above topnav -->
+        <div class="yellow-strip top"></div>
 
-  <!-- Yellow bar above topnav -->
-  <div class="yellow-strip top"></div>
+        <!-- Topnav bar -->
+        <div class="topnav">
+            <!-- Left: Logo -->
+            <div class="logo">
+                <a href="/"><img src="/static/logo.png" alt="OBB logo" /></a>
+            </div>
 
-  <!-- Topnav bar -->
-  <div class="topnav">
-    <!-- Left: Logo -->
-    <div class="logo">
-      <a href="/"><img src="/static/logo.png" alt="OBB logo" /></a>
-    </div>
+            <!-- Center: Navigation Links -->
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/menu" class="active">Menu</a>
+            </div>
 
-    <!-- Center: Navigation Links -->
-    <div class="nav-links">
-      <a href="/">Home</a>
-      <a href="/menu" class="active">Menu</a>
-    </div>
+            <!-- Right: Shopping Cart -->
+            <div class="cart">
+                <a href="/cart"><img src="/static/cart-icon.png" alt="Cart" class="donotremoveortopnavgobyebye" /></a>
+            </div>
+        </div>
 
-    <!-- Right: Shopping Cart -->
-    <div class="cart">
-      <a href="/cart"><img src="/static/cart-icon.png" alt="Cart" class="donotremoveortopnavgobyebye" /></a>
-    </div>
-  </div>
+        <!-- greybar below topnav -->
+        <div class="yellow-strip bottom"></div>
+        <!-- Burgers Section -->
 
-  <!-- Yellow bar below topnav -->
-  <div class="yellow-strip bottom"></div>
-<!-- Burgers Section -->
-<div class="foodtypebox">
-  <h1>Burgers</h1>
-</div>
-<div class="parent">
-  <div class="food-item">
-    <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Egg Burger">
-    <h2 class="burgername">Egg Burger</h2>
-    <h3 class="burgerprice">$7.00</h3>
-    <button class="order-button">Order</button>
-  </div>
-  <div class="food-item">
-    <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Ham Burger">
-    <h2 class="burgername">Ham Burger</h2>
-    <h3 class="burgerprice">$7.00</h3>
-    <button class="order-button">Order</button>
-  </div>
-  <div class="food-item">
-    <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Cheese Burger">
-    <h2 class="burgername">Cheese Burger</h2>
-    <h3 class="burgerprice">$7.00</h3>
-    <button class="order-button">Order</button>
-  </div>
-  <div class="food-item">
-    <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Chicken Burger">
-    <h2 class="burgername">Chicken Burger</h2>
-    <h3 class="burgerprice">$9.00</h3>
-    <button class="order-button">Order</button>
-  </div>
-  <div class="food-item">
-    <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Fish Burger">
-    <h2 class="burgername">Fish Burger</h2>
-    <h3 class="burgerprice">$9.00</h3>
-    <button class="order-button">Order</button>
-  </div>
-  <div class="food-item">
-    <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Works Burger">
-    <h2 class="burgername">Works Burger</h2>
-    <h3 class="burgerprice">$12.00</h3>
-    <button class="order-button">Order</button>
-  </div>
-  <div class="food-item">
-    <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Steak Burger">
-    <h2 class="burgername">Steak Burger</h2>
-    <h3 class="burgerprice">$10.00</h3>
-    <button class="order-button">Order</button>
-  </div>
-<div class="food-item">
-    <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Kids Burger">
-    <h2 class="burgername">Kids Burger</h2>
-    <h3 class="burgerprice">$5.00</h3>
-    <button class="order-button">Order</button>
-  </div>
-  <div class="food-item">
-    <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Hawaiian Burger">
-    <h2 class="burgername">Hawaiian Burger</h2>
-    <h3 class="burgerprice">$10.00</h3>
-    <button class="order-button">Order</button>
-  </div>
-  <div class="food-item">
-    <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Mathew Burger">
-    <h2 class="burgername">Mathew Burger</h2>
-    <h3 class="burgerprice">$17.00</h3>
-    <button class="order-button">Order</button>
-  </div>
-</div>
+        <div class="foodtypebox">
+            <h1>Burgers</h1>
+        </div>
+        <div class="menubar"></div>
+        <div class=""></div>
+        <div class="parent">
+            <div class="food-item">
+                <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Egg Burger" />
+                <h2 class="burgername">Egg Burger</h2>
+                <h3 class="burgerprice">$7.00</h3>
+                <button class="order-button">Order</button>
+            </div>
+            <div class="food-item">
+                <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Ham Burger" />
+                <h2 class="burgername">Ham Burger</h2>
+                <h3 class="burgerprice">$7.00</h3>
+                <button class="order-button">Order</button>
+            </div>
+            <div class="food-item">
+                <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Cheese Burger" />
+                <h2 class="burgername">Cheese Burger</h2>
+                <h3 class="burgerprice">$7.00</h3>
+                <button class="order-button">Order</button>
+            </div>
+            <div class="food-item">
+                <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Chicken Burger" />
+                <h2 class="burgername">Chicken Burger</h2>
+                <h3 class="burgerprice">$9.00</h3>
+                <button class="order-button">Order</button>
+            </div>
+            <div class="food-item">
+                <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Fish Burger" />
+                <h2 class="burgername">Fish Burger</h2>
+                <h3 class="burgerprice">$9.00</h3>
+                <button class="order-button">Order</button>
+            </div>
+            <div class="food-item">
+                <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Works Burger" />
+                <h2 class="burgername">Works Burger</h2>
+                <h3 class="burgerprice">$12.00</h3>
+                <button class="order-button">Order</button>
+            </div>
+            <div class="food-item">
+                <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Steak Burger" />
+                <h2 class="burgername">Steak Burger</h2>
+                <h3 class="burgerprice">$10.00</h3>
+                <button class="order-button">Order</button>
+            </div>
+            <div class="food-item">
+                <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Kids Burger" />
+                <h2 class="burgername">Kids Burger</h2>
+                <h3 class="burgerprice">$5.00</h3>
+                <button class="order-button">Order</button>
+            </div>
+            <div class="food-item">
+                <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Hawaiian Burger" />
+                <h2 class="burgername">Hawaiian Burger</h2>
+                <h3 class="burgerprice">$10.00</h3>
+                <button class="order-button">Order</button>
+            </div>
+            <div class="food-item">
+                <img src="/static/Burgers/Mathewburger.png" class="burgerimage" alt="Mathew Burger" />
+                <h2 class="burgername">Mathew Burger</h2>
+                <h3 class="burgerprice">$17.00</h3>
+                <button class="order-button">Order</button>
+            </div>
+        </div>
+        <div class="menubar"></div>
+        <!-- Fried Rice Section -->
+        <div class="foodtypebox">
+            <h1>Fried Rice</h1>
+        </div>
+        <div class="menubar"></div>
+        <div class="parent">
+            <div class="food-item">
+                <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Egg Fried Rice" />
+                <h2 class="burgername">Egg Fried Rice</h2>
+                <h3 class="burgerprice">$18.00</h3>
+                <button class="order-button">Order</button>
+            </div>
+            <div class="food-item">
+                <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Chicken Fried Rice" />
+                <h2 class="burgername">Chicken Fried Rice</h2>
+                <h3 class="burgerprice">$19.00</h3>
+                <button class="order-button">Order</button>
+            </div>
+            <div class="food-item">
+                <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Pork Fried Rice" />
+                <h2 class="burgername">Pork Fried Rice</h2>
+                <h3 class="burgerprice">$19.00</h3>
+                <button class="order-button">Order</button>
+            </div>
+            <div class="food-item">
+                <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Combination Meat Fried Rice" />
+                <h2 class="burgername">Combination Meat Fried Rice</h2>
+                <h3 class="burgerprice">$21.00</h3>
+                <button class="order-button">Order</button>
+            </div>
+            <div class="food-item">
+                <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Beef Fried Rice" />
+                <h2 class="burgername">Beef Fried Rice</h2>
+                <h3 class="burgerprice">$19.00</h3>
+                <button class="order-button">Order</button>
+            </div>
+            <div class="food-item">
+                <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Prawn Fried Rice" />
+                <h2 class="burgername">Prawn Fried Rice</h2>
+                <h3 class="burgerprice">$20.00</h3>
+                <button class="order-button">Order</button>
+            </div>
+            <div class="food-item">
+                <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="BBQ Pork Fried Rice" />
+                <h2 class="burgername">BBQ Pork Fried Rice</h2>
+                <h3 class="burgerprice">$20.00</h3>
+                <button class="order-button">Order</button>
+            </div>
+            <div class="food-item">
+                <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Special Fried Rice" />
+                <h2 class="burgername">Special Fried Rice</h2>
+                <h3 class="burgerprice">$21.00</h3>
+                <button class="order-button">Order</button>
+            </div>
+        </div>
+        <div class="menubar"></div>
 
-<!-- Fried Rice Section -->
-<div class="foodtypebox">
-  <h1>Fried Rice</h1>
-</div>
-<div class="parent">
-  <div class="food-item">
-    <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Egg Fried Rice">
-    <h2 class="burgername">Egg Fried Rice</h2>
-    <h3 class="burgerprice">$18.00</h3>
-    <button class="order-button">Order</button>
-  </div>
-  <div class="food-item">
-    <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Chicken Fried Rice">
-    <h2 class="burgername">Chicken Fried Rice</h2>
-    <h3 class="burgerprice">$19.00</h3>
-    <button class="order-button">Order</button>
-  </div>
-  <!-- Add the rest of the Fried Rice items here -->
-</div>
+        <!-- Chow Mein Section -->
+        <div class="foodtypebox">
+            <h1>Chow Mein</h1>
+        </div>
+        <div class="menubar"></div>
+        <div class="parent">
+            <div class="food-item">
+                <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Vegetable Chow Mein" />
+                <h2 class="burgername">Vegetable Chow Mein</h2>
+                <h3 class="burgerprice">$19.00</h3>
+                <button class="order-button">Order</button>
+            </div>
+            <div class="food-item">
+                <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Chicken Chow Mein" />
+                <h2 class="burgername">Chicken Chow Mein</h2>
+                <h3 class="burgerprice">$20.00</h3>
+                <button class="order-button">Order</button>
+            </div>
+            <div class="food-item">
+                <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Pork Chow Mein" />
+                <h2 class="burgername">Pork Chow Mein</h2>
+                <h3 class="burgerprice">$20.00</h3>
+                <button class="order-button">Order</button>
+            </div>
+            <div class="food-item">
+                <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="BBQ Pork Chow Mein" />
+                <h2 class="burgername">BBQ Pork Chow Mein</h2>
+                <h3 class="burgerprice">$21.00</h3>
+                <button class="order-button">Order</button>
+            </div>
+            <div class="food-item">
+                <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Prawn Chow Mein" />
+                <h2 class="burgername">Prawn Chow Mein</h2>
+                <h3 class="burgerprice">$22.00</h3>
+                <button class="order-button">Order</button>
+            </div>
+            <div class="food-item">
+                <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Special Chow Mein" />
+                <h2 class="burgername">Special Chow Mein</h2>
+                <h3 class="burgerprice">$23.00</h3>
+                <button class="order-button">Order</button>
+            </div>
+            <div class="food-item">
+                <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Beef Chow Mein" />
+                <h2 class="burgername">Beef Chow Mein</h2>
+                <h3 class="burgerprice">$20.00</h3>
+                <button class="order-button">Order</button>
+            </div>
+        </div>
+        <div class="menubar"></div>
 
+        <!-- Fried Sides Section -->
+        <div class="foodtypebox">
+            <h1>Fried Sides</h1>
+        </div>
+        <div class="menubar"></div>
+        <div class="parent">
+            <div class="food-item">
+                <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Battered Sausage" />
+                <h2 class="burgername">Battered Sausage</h2>
+                <h3 class="burgerprice">$5.00</h3>
+                <button class="order-button">Order</button>
+            </div>
+            <div class="food-item">
+                <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Deep Fried Moro Bar" />
+                <h2 class="burgername">Deep Fried Moro Bar</h2>
+                <h3 class="burgerprice">$3.00</h3>
+                <button class="order-button">Order</button>
+            </div>
+            <div class="food-item">
+                <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Beef Patty" />
+                <h2 class="burgername">Beef Patty</h2>
+                <h3 class="burgerprice">$2.00</h3>
+                <button class="order-button">Order</button>
+            </div>
+            <div class="food-item">
+                <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Pineapple Fritter" />
+                <h2 class="burgername">Pineapple Fritter</h2>
+                <h3 class="burgerprice">$2.70</h3>
+                <button class="order-button">Order</button>
+            </div>
 
-
-
-
-
-</body>
+            <div class="food-item">
+                <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Deep Fried Banana" />
+                <h2 class="burgername">Deep Fried Banana</h2>
+                <h3 class="burgerprice">$3.00</h3>
+                <button class="order-button">Order</button>
+            </div>
+            <div class="food-item">
+                <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Pork Bun" />
+                <h2 class="burgername">Pork Bun</h2>
+                <h3 class="burgerprice">$4.50</h3>
+                <button class="order-button">Order</button>
+            </div>
+            <!-- Chips Section -->
+            <div class="food-item">
+                <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Regular Chips" />
+                <h2 class="burgername">Regular Chips</h2>
+                <h3 class="burgerprice">$3.50</h3>
+                <button class="order-button">Order</button>
+            </div>
+            <div class="food-item">
+                <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Large Chips" />
+                <h2 class="burgername">Large Chips</h2>
+                <h3 class="burgerprice">$5.00</h3>
+                <button class="order-button">Order</button>
+            </div>
+            <div class="food-item">
+                <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Curly Fries" />
+                <h2 class="burgername">Curly Fries</h2>
+                <h3 class="burgerprice">$6.00</h3>
+                <button class="order-button">Order</button>
+            </div>
+            <div class="food-item">
+                <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Sweet Potato Fries" />
+                <h2 class="burgername">Sweet Potato Fries</h2>
+                <h3 class="burgerprice">$6.50</h3>
+                <button class="order-button">Order</button>
+            </div>
+        </div>
+        <div class="menubar"></div>
+        <div class="foodtypebox">
+            <h1>Fish</h1>
+        </div>
+        <div class="menubar"></div>
+        <div class="parent">
+            <div class="food-item">
+                <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Hoki (Regular)" />
+                <h2 class="burgername">Hoki (Regular)</h2>
+                <h3 class="burgerprice">$7.00</h3>
+                <button class="order-button">Order</button>
+            </div>
+            <div class="food-item">
+                <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Hoki (Crumbed)" />
+                <h2 class="burgername">Hoki (Crumbed)</h2>
+                <h3 class="burgerprice">$7.50</h3>
+                <button class="order-button">Order</button>
+            </div>
+            <div class="food-item">
+                <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Gurnard (Regular)" />
+                <h2 class="burgername">Gurnard (Regular)</h2>
+                <h3 class="burgerprice">$10.00</h3>
+                <button class="order-button">Order</button>
+            </div>
+            <div class="food-item">
+                <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Gurnard (Crumbed)" />
+                <h2 class="burgername">Gurnard (Crumbed)</h2>
+                <h3 class="burgerprice">$10.50</h3>
+                <button class="order-button">Order</button>
+            </div>
+            <div class="food-item">
+                <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Tarakihi (Regular)" />
+                <h2 class="burgername">Tarakihi (Regular)</h2>
+                <h3 class="burgerprice">$9.00</h3>
+                <button class="order-button">Order</button>
+            </div>
+            <div class="food-item">
+                <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Tarakihi (Crumbed)" />
+                <h2 class="burgername">Tarakihi (Crumbed)</h2>
+                <h3 class="burgerprice">$9.50</h3>
+                <button class="order-button">Order</button>
+            </div>
+            <div class="food-item">
+                <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Snapper (Regular)" />
+                <h2 class="burgername">Snapper (Regular)</h2>
+                <h3 class="burgerprice">$11.00</h3>
+                <button class="order-button">Order</button>
+            </div>
+            <div class="food-item">
+                <img src="/static/Burgers/Cheese.webp" class="burgerimage" alt="Snapper (Crumbed)" />
+                <h2 class="burgername">Snapper (Crumbed)</h2>
+                <h3 class="burgerprice">$11.50</h3>
+                <button class="order-button">Order</button>
+            </div>
+        </div>
+        <div class="menubar"></div>
+    </body>
 </html>
-  <!-- Footer -->
-  <div class="yellow-strip top"></div>
-  <div class="footer">
+<!-- Footer -->
+<div class="yellow-strip top"></div>
+<div class="footer">
     <div class="container">
-      <p>© 2025 Oingo Boingo Brothers | 14 Bay Street, Matua, Tauranga, 3110, Bay of Plenty, New Zealand</p>
+        <p>© 2025 Oingo Boingo Brothers | 14 Bay Street, Matua, Tauranga, 3110, Bay of Plenty, New Zealand</p>
     </div>
-  </div></div>
+</div>

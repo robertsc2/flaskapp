@@ -120,13 +120,14 @@
   gap: 20px;
   justify-content: center;
   padding: 20px;
+  padding: 1%;
 }
 
 .food-item {
   display: flex;
   flex-direction: column;
   border-radius: 15px;
-  background-color: antiquewhite;
+  background-color: #cfcfcf;
   width: 250px;
   height: 350px;
   
@@ -136,10 +137,11 @@
 .order-button {
   margin-top: 10px;
   padding: 8px 16px;
-  background-color: #ffcc00;
+  background-color:  #311102;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  color: #f9f9f9;
 }
 
 .order-button:hover {
@@ -152,15 +154,23 @@
   align-items: center;
   text-align: center;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: #cfcfcf;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   width: 200px;
   height: 50px;
   margin-top: 30px;
+  margin-bottom: 30px;
+
 }
 
 .burgerimage { 
   width: 200px;
   height: 200px;
   border-radius: 10px;
+}
+
+.menubar {
+  height: 10px;
+  width: 91%;
+  background-color: #333;
 }
